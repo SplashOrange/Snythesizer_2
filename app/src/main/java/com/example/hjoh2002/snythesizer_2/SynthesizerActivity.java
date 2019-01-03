@@ -49,6 +49,13 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpX.start();
     }
 
+// Some links I was using because I don't know shit
+    // https://developer.android.com/reference/android/view/View.OnClickListener
+    // https://developer.android.com/studio/debug/am-logcat
+    // https://developer.android.com/reference/android/view/View#using-views
+    // https://developer.android.com/studio/write/tool-attributes
+    // https://stackoverflow.com/questions/6691951/android-how-to-add-r-raw-to-project
+
 
 }
 
