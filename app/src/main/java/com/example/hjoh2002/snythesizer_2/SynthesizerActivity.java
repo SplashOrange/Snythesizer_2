@@ -9,6 +9,8 @@ import android.widget.Button;
 
 
 public class SynthesizerActivity extends AppCompatActivity {
+
+    private final int WHOLE_NOTE = 1000;
     private static final String TAG =
             SynthesizerActivity.class.getName();
     private Button mEButton;
@@ -29,6 +31,14 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpE = MediaPlayer.create(this, R.raw.scalee);
         mpF = MediaPlayer.create(this, R.raw.scalef);
         mpX = MediaPlayer.create(this, R.raw.scalex);
+    }
+
+    private void delayPlaying(int delay) {
+        try {
+            Thread.sleep(delay);
+        } catch (InterruptedException e) {
+            Log.e("SynthesizerActivity", "Audio playback interrupted");
+        }
     }
 
     public void onButton1Click(View v) {
